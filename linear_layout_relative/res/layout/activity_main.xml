@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="#34c567"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="10dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/reltvesub:"
+        android:layout_marginTop="96dp"
+        android:layout_marginBottom="10dp"
+        android:background="#567891"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonlinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="linearbtn" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/reltveto:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:text="to:" />
+
+    <EditText
+        android:id="@+id/reltvesub:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reltveto:"
+        android:layout_below="@+id/reltveto:"
+        android:ems="10"
+        android:text="subject:" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonRelat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reltvesub:"
+        android:layout_below="@+id/reltvesub:"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="21dp"
+        android:text="relativebtn" />
+
+</RelativeLayout>

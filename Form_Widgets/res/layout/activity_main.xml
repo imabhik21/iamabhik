@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <RadioButton
+        android:id="@+id/radioButtonOption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="53dp"
+        android:text="RadioButton" />
+
+    <RadioButton
+        android:id="@+id/radioButtonOption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioButtonOption1"
+        android:layout_below="@+id/radioButtonOption1"
+        android:layout_marginTop="24dp"
+        android:text="RadioButton" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioButtonOption2"
+        android:layout_below="@+id/radioButtonOption2"
+        android:layout_marginTop="60dp" >
+
+        <RadioButton
+            android:id="@+id/radioelect1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="selection1" />
+
+        <RadioButton
+            android:id="@+id/radioSelect2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="selection2" />
+
+        <RadioButton
+            android:id="@+id/radioSelect3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="selection3" />
+        <RadioButton
+            android:id="@+id/radioSelect4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="selection4" />
+    </RadioGroup>
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButtonOption2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/radioButtonOption2"
+        android:text="ToggleButton" />
+
+</RelativeLayout>
